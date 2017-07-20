@@ -1,0 +1,181 @@
+{
+  "robots": [
+    {
+      "id": 1,
+      "name": "Robot1",
+      "configuration": {
+        "hasSentience": true,
+        "hasWheels": false,
+        "hasTracks": true,
+        "numberOfRotors": 4,
+        "Colour": "red"
+      },
+      "statuses": [
+        "on fire",
+        "rusty",
+        "loose screws",
+        "paint scratched"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Robot2",
+      "configuration": {
+        "hasSentience": false,
+        "hasWheels": false,
+        "hasTracks": true,
+        "numberOfRotors": 4,
+        "Colour": "red"
+      },
+      "statuses": [
+        "on fire",
+        "rusty",
+        "loose screws",
+        "paint scratched"
+      ]
+    }
+  ],
+  "recycleRobots": [],
+  "extiguish": [
+    {
+      "1": "",
+      "id": 1
+    },
+    {
+      "1": "",
+      "id": 2
+    },
+    {
+      "1": "",
+      "id": 3
+    },
+    {
+      "1": "",
+      "id": 4
+    },
+    {
+      "1": "",
+      "id": 5
+    },
+    {
+      "1": "",
+      "id": 6
+    },
+    {
+      "1": "",
+      "id": 7
+    },
+    {
+      "1": "",
+      "id": 8
+    },
+    {
+      "1": "",
+      "id": 9
+    },
+    {
+      "1": "",
+      "id": 10
+    },
+    {
+      "1": "",
+      "id": 11
+    },
+    {
+      "1": "",
+      "id": 12
+    },
+    {
+      "1": "",
+      "id": 13
+    },
+    {
+      "1": "",
+      "id": 14
+    },
+    {
+      "1": "",
+      "id": 15
+    },
+    {
+      "1": "",
+      "id": 16
+    },
+    {
+      "1": "",
+      "id": 17
+    },
+    {
+      "1": "",
+      "id": 18
+    },
+    {
+      "1": "",
+      "id": 19
+    },
+    {
+      "1": "",
+      "id": 20
+    },
+    {
+      "1": "",
+      "id": 21
+    },
+    {
+      "1": "",
+      "id": 22
+    },
+    {
+      "1": "",
+      "id": 23
+    },
+    {
+      "1": "",
+      "id": 24
+    },
+    {
+      "1": "",
+      "id": 25
+    },
+    {
+      "1": "",
+      "id": 26
+    },
+    {
+      "1": "",
+      "id": 27
+    },
+    {
+      "1": "",
+      "id": 28
+    },
+    {
+      "1": "",
+      "id": 29
+    },
+    {
+      "1": "",
+      "id": 30
+    },
+    {
+      "1": "",
+      "id": 31
+    },
+    {
+      "1": "",
+      "id": 32
+    },
+    {
+      "1": "",
+      "id": 33
+    },
+    {
+      "1": "",
+      "id": 34
+    },
+    {
+      "1": "",
+      "id": 35
+    }
+  ]
+}
