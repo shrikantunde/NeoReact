@@ -9,6 +9,18 @@ export function shippingActions(robot) {
   return {type: types.LOAD_ROBOT, robot};
 };
 
+export const loadRobot = () => {
+  return (dispatch) => {
+    return axios.get(apiUrl,)
+      .then(response => {
+        dispatch(shippingActions(response.data))
+      })
+      .catch(error => {
+        throw(error);
+      });
+  };
+};
+
 export const getRobot = () => {
   return (dispatch) => {
     return axios.get(apiUrl1)
@@ -34,6 +46,7 @@ export const postrobot = (id) => {
       });
   };
 };
+
 export const postrecycle = (id) => {
   console.log('postrecycle',id)
   return (dispatch) => {

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import {bindActionCreators} from 'redux';
 import * as shippingActions from '../../actions/robotActions';
+import configureStore from './../../store/configureStore';
+import {loadShipping} from '../../actions/shippingActions';
 
 class ShippingPage extends React.Component {
   constructor(props){
@@ -9,14 +11,18 @@ class ShippingPage extends React.Component {
 
   }
 
-  render() {
-    const {robots,actions} = this.props;
-    console.log("Shipping page");
-    robots.map((robot) =>{
-       //stage3
+  componentDidMount(){
+    const store = configureStore();
+    store.dispatch(loadShipping());
+    alert("load shipping page")
+  }
 
-       let stage1=actions.getRobot()
-       console.log('Shipping list',stage1)
+  render() {
+    const {shipping,actions} = this.props;
+    console.log("Shipping page");
+    shipping.map((ship) =>{
+       console.log("shipping list");
+       console.log(ship);
       });
 return (
       <div>
@@ -26,17 +32,17 @@ return (
             <th>Shipping Robot List</th>
           </tr>
         </thead>
-        <tbody>{robots.map((robot) => <tr key={robot.id}><td>{robot.name}</td></tr>)}</tbody>
+        <tbody>{shipping.map((ship) => <tr key={ship.id}><td>{ship.name}</td></tr>)}</tbody>
       </table>
       </div>
     );
   }
 }
 
-function mapStateToProps({robots}) {
-  console.log('shipping robots',robots)
+function mapStateToProps({shipping}) {
+  console.log('shipping robots',shipping)
   return {
-    robots: robots
+    shipping: shipping
   }
 }
 function mapDispatchToProps(dispatch) {
